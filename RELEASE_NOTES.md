@@ -7,12 +7,14 @@
 ## ✨ What's New
 
 ### 🔐 Persistent User Login
+
 - **Stay logged in** — Users now remain logged in across app restarts
 - Session credentials securely stored using SharedPreferences
 - Automatic redirect to home screen for returning users
 - Clean sign-out functionality that properly clears session data
 
 ### 🎨 Enhanced UI/UX
+
 - **Improved Sign-In Experience** — Added comprehensive form validation with real-time error messages
 - Clear error indicators for empty fields and invalid email formats
 - Password minimum length requirement (4 characters)
@@ -20,6 +22,7 @@
 - **Better Visual Feedback** — Error messages now display in styled containers with proper theming
 
 ### 💊 Medication Management Improvements
+
 - **Interactive Reminder Toggles** — Enable/disable individual medication reminders with a single tap
 - **Add New Reminder Times** — New time picker dialog to add custom medication schedules
 - **Frequency Selection** — Daily, Weekly, and Custom scheduling options with segmented control
@@ -27,6 +30,7 @@
 - **Edit Reminders** — Tap to edit existing reminder details
 
 ### 📅 Track Screen Enhancements
+
 - **Floating Action Button (FAB)** — Quick access to add new health entries
 - **Add Entry Dialog** — Log Weight, Blood Pressure, Mood, or Medication entries on the fly
 - **Month/Date Navigation** — Interactive date picker for browsing health history
@@ -34,6 +38,7 @@
 - **Quick Actions** — Convenient "Log Weight" and "Log BP" buttons
 
 ### 📈 Clinical Reports
+
 - **Monthly Health Summary** — View comprehensive health overview including:
   - Weight and Blood Pressure averages
   - Active medications count
@@ -42,11 +47,13 @@
 - **Export Options** — PDF Report, CSV Data, and Share with Doctor functionality
 
 ### 🌗 Theme Improvements
+
 - **Persistent Theme Preference** — Dark/Light mode choice saved and restored on app launch
 - Improved color consistency across all screens in both themes
 - Fixed text visibility issues in dark mode input fields
 
 ### ⚡ Performance & Navigation
+
 - **Removed Navigation Transitions** — Instant screen changes for snappier experience
 - Optimized navigation flow with proper back stack handling
 - Clean logout that clears navigation history
@@ -97,6 +104,7 @@
 Download the latest APK from the [Releases](https://github.com/toxicbishop/Health-Tracker-App/releases) page.
 
 ### Requirements
+
 - Android 7.0 (API 24) or higher
 - ~15 MB storage space
 
@@ -109,4 +117,3 @@ Thank you to all our beta testers for their valuable feedback!
 ---
 
 **Full Changelog:** [v2.3.0...v2.4.0](https://github.com/toxicbishop/Health-Tracker-App/compare/v2.3.0...v2.4.0)
-
