@@ -1,0 +1,42 @@
+# Git
+.git
+.gitignore
+
+# Build outputs
+build/
+app/build/
+.gradle/
+gradle-wrapper/
+gradle-wrapper.zip
+
+# IDE
+.idea/
+*.iml
+*.iws
+
+# Local configuration
+local.properties
+
+# APK files
+*.apk
+*.aab
+
+# Keystore files
+*.jks
+*.keystore
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Documentation
+*.md
+!README.md
+
+# Docker files (prevent recursive copying)
+Dockerfile
+docker-compose.yml
+.dockerignore

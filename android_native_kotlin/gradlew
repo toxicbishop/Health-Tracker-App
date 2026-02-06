@@ -1,0 +1,22 @@
+#!/usr/bin/env sh
+
+# Locate the gradle-wrapper.properties file
+DIR=$(cd "$(dirname "$0")" && pwd)
+GRADLE_WRAPPER_PROPERTIES="$DIR/gradle/wrapper/gradle-wrapper.properties"
+
+if [ -f "$GRADLE_WRAPPER_PROPERTIES" ]; then
+    GRADLE_URL=$(grep distributionUrl "$GRADLE_WRAPPER_PROPERTIES" | cut -d'=' -f2-)
+    GRADLE_ZIP="$DIR/gradle-wrapper.zip"
+    curl -o "$GRADLE_ZIP" "$GRADLE_URL"
+    unzip -o "$GRADLE_ZIP" -d "$DIR/gradle-wrapper"
+    GRADLE_EXE="$DIR/gradle-wrapper/$(basename "$GRADLE_URL" .zip)/bin/gradle"
+    if [ -f "$GRADLE_EXE" ]; then
+        "$GRADLE_EXE" "$@"
+    else
+        echo "Gradle executable not found after extraction."
+        exit 1
+    fi
+else
+    echo "gradle-wrapper.properties not found."
+    exit 1
+fi
